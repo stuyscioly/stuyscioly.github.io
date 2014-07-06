@@ -340,23 +340,6 @@ article p {
 }
 
    </style>
-
-
-
-   
-   <script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-48048963-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-   </script>
    
 
 
@@ -406,8 +389,6 @@ article p {
 </header>
 
 
-
-
 <section class="the-posts" style="padding: 0px">
 
 
@@ -420,19 +401,77 @@ article p {
 
 
 
-			<!-- Text Post -->
+				<!-- Text Post -->
 
 
-			<div class="inner-wrap">
+				<div class="inner-wrap">
 
-				
-				<h2><a href="" style="color:#C73122"title="Gallery">GALLERY</a></h2>
-				
+					
+					<h2><a href="" style="color:#C73122"title="Gallery">GALLERY</a></h2>
+					
+					<script>
+					   	var dirpath = "./StuySciOly_files/Gallery/";
+					    var fileNames = [
+					    					"angela",
+					    					"beard",
+					    					"brandon",
+					    					"cindy",
+					    					"danny",
+					    					"diana",
+					    					"dino",
+					    					"dyingwaterbottle",
+					    					"hallistired",
+					    					"hurr",
+					    					"hurrpart2",
+					    					"jason",
+					    					"johnson"
+					    				];
+					  	var fileType = ".jpg";
+					    var gallery= document.getElementById("gallery-photos");
 
-				<p1>Insert beautiful gallery here.</p1>
-				<p><img src="StuySciOly_files" style="line-height: 1.4; display: block; margin: 0 auto;" alt="Whoops that image isn't the right one."></p>
+					    function loadPhotos(){
+					    	var id = "img";
+					    	var inner = "";
+					    	for(var i=0;i<fileNames.length;i++){
+					    		inner += insertPhoto(dirpath+fileNames[i]+fileType,i);
+					    		document.getElementById("gallery-photos").innerHTML=inner;
+					    		
+					    	}
+					    }
 
-			</div>
+					   	function insertPhoto(path,num){
+
+					   		var stringstuff = "";
+					   		stringstuff+= "<div ";
+					   		stringstuff+= "id=\"img" + num + "\"";
+					   		stringstuff+= "style=\"float:left;position:relative\">";
+					   		stringstuff+= "<img src=\"" + path + "\" width=\"300\" style=\"position:relative\"> ";
+					   		stringstuff+= "</div>";
+					   		return stringstuff;
+					   	}
+
+
+
+					</script>
+
+
+					<p1>EDMOND'S GREATEST HITS</p1>
+					<br>
+					<button id="loadButton" onclick="loadPhotos()">Render the photos!</button>
+					<button id="magicButton">The magic button</button>
+
+
+
+					<div id="gallery-photos" style="position:relative">
+						The gallery photos should go here.
+					</div>
+					<br>
+					<div id="test">
+						if done then this text should change
+					</div>
+
+
+				</div>
 
 			</div>
 	 	 	   
@@ -451,8 +490,10 @@ article p {
 <!-- Javascript Assets -->
 
 <script src="./StuySciOly_files/jquery.min.js"></script>
+<!--
 <script src="./StuySciOly_files/top-dog-plugins.js"></script>
 <script src="./StuySciOly_files/top-dog-app.js"></script>
+-->
 
 <!--
     This Tumblr Theme and all of its CSS, Javascript,
