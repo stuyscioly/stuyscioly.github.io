@@ -12,6 +12,11 @@
 	<meta name="description" content="Looks like I'm hacking into this code hue">
 	<link rel="shortcut icon" href="StuySciOly_files/icon.jpg">
 
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="./StuySciOly_files/img-processing.js"></script>
+
+
 	<!-- Main Style Settings -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -408,66 +413,34 @@ article p {
 
 					
 					<h2><a href="" style="color:#C73122"title="Gallery">GALLERY</a></h2>
-					
-					<script>
-					   	var dirpath = "./StuySciOly_files/Gallery/";
-					    var fileNames = [
-					    					"angela",
-					    					"beard",
-					    					"brandon",
-					    					"cindy",
-					    					"danny",
-					    					"diana",
-					    					"dino",
-					    					"dyingwaterbottle",
-					    					"hallistired",
-					    					"hurr",
-					    					"hurrpart2",
-					    					"jason",
-					    					"johnson"
-					    				];
-					  	var fileType = ".jpg";
-					    var gallery= document.getElementById("gallery-photos");
-
-					    function loadPhotos(){
-					    	var id = "img";
-					    	var inner = "";
-					    	for(var i=0;i<fileNames.length;i++){
-					    		inner += insertPhoto(dirpath+fileNames[i]+fileType,i);
-					    		document.getElementById("gallery-photos").innerHTML=inner;
-					    		
-					    	}
-					    }
-
-					   	function insertPhoto(path,num){
-
-					   		var stringstuff = "";
-					   		stringstuff+= "<div ";
-					   		stringstuff+= "id=\"img" + num + "\"";
-					   		stringstuff+= "style=\"float:left;position:relative\">";
-					   		stringstuff+= "<img src=\"" + path + "\" width=\"300\" style=\"position:relative\"> ";
-					   		stringstuff+= "</div>";
-					   		return stringstuff;
-					   	}
 
 
-
-					</script>
-
-
-					<p1>EDMOND'S GREATEST HITS</p1>
+					<p1 id="subhead" >EDMOND'S GREATEST HITS</p1>
 					<br>
-					<button id="loadButton" onclick="loadPhotos()">Render the photos!</button>
+					<button id="loadButton" onclick="loadPhotos()">Show the photos!</button>
+					<br>
+
+					<style type="text/css">
+					img
+					{
+						position: relative;
+						padding: 25px;
+					}
+					</style>
+					<!--
+					<br>
+					<img id="img1" src="./StuySciOly_files/Gallery/naoki2.jpg" alt="genjican'tcode" width="300" style="display:none">
+					<img id="img2"src="./StuySciOly_files/Gallery/naoki.jpg" alt="genjican'tcode" width="300"style="display:none">
+					<img id="img3"src="./StuySciOly_files/Gallery/angela.jpg" alt="genjican'tcode" width="300"style="display:none">
+					<img id="img4"src="./StuySciOly_files/Gallery/beard.jpg" alt="genjican'tcode" width="300"style="display:none">
+					<br>
+				-->
 					<button id="magicButton">The magic button</button>
 
+					<div id="gallery-photos"></div>
 
-
-					<div id="gallery-photos" style="position:relative">
-						The gallery photos should go here.
-					</div>
-					<br>
 					<div id="test">
-						if done then this text should change
+						swiggityswaggerswiggityswaggerswiggityswagger
 					</div>
 
 
@@ -489,7 +462,6 @@ article p {
 
 <!-- Javascript Assets -->
 
-<script src="./StuySciOly_files/jquery.min.js"></script>
 <!--
 <script src="./StuySciOly_files/top-dog-plugins.js"></script>
 <script src="./StuySciOly_files/top-dog-app.js"></script>
