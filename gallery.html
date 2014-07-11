@@ -12,8 +12,11 @@
 	<meta name="description" content="Looks like I'm hacking into this code hue">
 	<link rel="shortcut icon" href="StuySciOly_files/icon.jpg">
 
-
+	<!--
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	-->
+	<script src="./StuySciOly_files/jquery.min.js"></script>
+	
 	<script src="./StuySciOly_files/img-processing.js"></script>
 
 
@@ -415,27 +418,37 @@ article p {
 					<h2><a href="" style="color:#C73122"title="Gallery">GALLERY</a></h2>
 
 
-					<p1 id="subhead" >EDMOND'S GREATEST HITS</p1>
-					<br>
-					<button id="loadButton" onclick="loadPhotos()">Show the photos!</button>
-					<br>
-
+					<p id="subhead" >EDMOND'S GREATEST HITS</p>
 					<style type="text/css">
 					img
 					{
 						position: relative;
 						padding: 25px;
 					}
+					
 					</style>
-					<!--
-					<br>
-					<img id="img1" src="./StuySciOly_files/Gallery/naoki2.jpg" alt="genjican'tcode" width="300" style="display:none">
-					<img id="img2"src="./StuySciOly_files/Gallery/naoki.jpg" alt="genjican'tcode" width="300"style="display:none">
-					<img id="img3"src="./StuySciOly_files/Gallery/angela.jpg" alt="genjican'tcode" width="300"style="display:none">
-					<img id="img4"src="./StuySciOly_files/Gallery/beard.jpg" alt="genjican'tcode" width="300"style="display:none">
-					<br>
-				-->
-					<button id="magicButton">The magic button</button>
+
+					<br><br><br>
+
+					<div id="album-chooser" align="left">
+
+						<p> - Choose the year -</p>
+						<h2> <a id="piclink-2014">2014</a> <h2>
+
+							<h3><a id="EdmondsGreatestHits2014" style="display:none">
+								&nbsp&nbsp&nbspEdmond's Greatest Hits
+							</a></h3>
+
+							<br>
+						<h2><a id="piclink-2013">2013</a></h2>
+
+							<h3><a id="States2013" style="display:none">
+								&nbsp&nbsp&nbspStates 2013
+							</a></h3>
+							<br>
+
+
+					</div>
 
 					<div id="gallery-photos"></div>
 
