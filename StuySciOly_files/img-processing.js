@@ -108,7 +108,7 @@ function hidePhotos(time,album){
 }
 
 $(document).ready(function(){ //Apparently this line is bad code hurr
-	//To do : fix the code so that it's more automated (have an array of hte different events, or use the keys from fileNames)
+	//To do : fix the code so that it's more automated (have an array of the different events, or use the keys from fileNames)
 
 
 	//2014
