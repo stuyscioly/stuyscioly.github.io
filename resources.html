@@ -12,6 +12,8 @@
 	<meta name="description" content="Looks like I'm hacking into this code hue">
 	<link rel="shortcut icon" href="StuySciOly_files/icon.jpg">
 
+	<script src="./StuySciOly_files/jquery.min.js"></script>
+
 	<!-- Main Style Settings -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -429,7 +431,7 @@ article p {
 				<h2><a href="" style="color:#C73122"title="Resources">RESOURCES</a></h2>
 				
 
-				<p>There will be a link to a Google Drive folder of the event rules when they come out. Please contact one of our board members or shoot us an email at <a href="mailto:stuyenceolympiad@gmail.com" target="_blank" title="stuyvenceolympiad@gmail.com">stuyenceolympiad@gmail.com</a> in order to access it.
+				<p>There will be a link to a Google Drive folder of the event rule<span id="E1" onclick="check()">s</span> when they come out. Please contact one of our b<span onclick="check()" id="E2">o<span>ard members or shoot us an email at <a href="mailto:stuyenceolympiad@gmail.com" target="_blank" title="stuyvenceolympiad@gmail.com">stuyenceolympiad@gmail.com</a> in order to acce<span onclick="check"id="E3">s<span>s it.
 				</p>
 				<br>
 				<br>
@@ -451,16 +453,45 @@ article p {
 
 	</div>
 
+	<video id="EE" style="display:none" width="320" height="240" controls>
+	  <source src="https://github.com/StuySciOly/miscFiles/raw/master/SHOOPER%20SECRET/LOLOLOLOL.mp4" type="video/mp4">
+	  <object data="movie.mp4" width="320" height="240">
+	    <embed width="320" height="240" src="movie.swf">
+	  </object>
+	</video>
+
 
 </section>
 
 
+<script>
+var a=false;
+var b=false;
+$(document).ready(function(){
+	$("#E3").click(function(){
+		a=true;
+		b=false;
+	});
+	$("#E2").click(function(){
+		if(a){
+			b=true;
+		}else{
+			a=false;
+		}
+	});
+})
 
+function check(){
+	if(a&&b){
+		$("#EE").show();
+	}
+}
+
+</script>
 
 
 <!-- Javascript Assets -->
 
-<script src="./StuySciOly_files/jquery.min.js"></script>
 <script src="./StuySciOly_files/top-dog-plugins.js"></script>
 <script src="./StuySciOly_files/top-dog-app.js"></script>
 
