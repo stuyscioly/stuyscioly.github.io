@@ -468,17 +468,19 @@ article p {
 var a=false;
 var b=false;
 $(document).ready(function(){
-	$("#E3").click(function(){
-		a=true;
-	});
 	$("#E2").click(function(){
 		b=true;
+	});
+	$("#E1").click(function(){
+		a=true;
 	});
 })
 
 function check(){
-	if(a&&b){
-		$("#EE").show();
+	if(a){
+		if(b==true){
+			$("#EE").show();
+		}
 	}
 }
 
