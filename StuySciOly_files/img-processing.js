@@ -73,7 +73,7 @@ function showPhotos(time,album){
 			for(var i=0;i<fileNames[time][album].length;i++){
 				var name = "#img" + i;
 				$(name).delay(0).show();
-				$(name).delay(i*100).animate({
+				$(name).delay(i*100).velocity({
 					top: '0px'
 				});
 			}
@@ -89,11 +89,11 @@ function hidePhotos(time,album){
 		for(var i=0;i<fileNames[time][album].length;i++){
 			var name = "#img" + i;
 			if(i%2==0){
-				$(name).delay(i*100).animate({
+				$(name).delay(i*100).velocity({
 					right: '+=2000px'
 				});
 			}else{
-				$(name).delay(i*100).animate({
+				$(name).delay(i*100).velocity({
 					left: '+=2000px'
 				})
 			}	
