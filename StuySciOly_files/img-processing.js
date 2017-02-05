@@ -148,7 +148,7 @@ function loadPhotos2(time,album){
 	var id = "img";
 	var inner = "";
 	for(var i=0;i<fileNames[time][album].length;i++){
-		inner += insertPhoto(mainDirPath+time+"/"+album+"/"+fileNames[time][album][i]+fileType2,i);
+		inner += insertPhoto2(mainDirPath+time+"/"+album+"/"+fileNames[time][album][i]+fileType2,i);
 		document.getElementById("gallery-photos").innerHTML=inner;
 		
 	}
