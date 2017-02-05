@@ -1,5 +1,6 @@
 var mainDirPath = "./StuySciOly_files/Gallery/";
 var fileType = ".jpg";
+var fileType2 = ".JPG";
 var gallery= document.getElementById("gallery-photos");
 var loadedPhotoTime = "";
 var loadedPhotoAlbum= "";
@@ -142,6 +143,17 @@ function loadPhotos(time,album){
 		
 	}
 }
+//DUPLICATE, for .JPG and not .jpg files
+function loadPhotos2(time,album){
+	var id = "img";
+	var inner = "";
+	for(var i=0;i<fileNames[time][album].length;i++){
+		inner += insertPhoto(mainDirPath+time+"/"+album+"/"+fileNames[time][album][i]+fileType2,i);
+		document.getElementById("gallery-photos").innerHTML=inner;
+		
+	}
+}
+
 
 function insertPhoto(path,num){
 
@@ -153,6 +165,7 @@ function insertPhoto(path,num){
 		stringstuff+= "</div>";
 		return stringstuff;
 	}
+
 
 function showPhotos(time,album){
 	if(time!=="" || album!==""){
@@ -172,6 +185,28 @@ function showPhotos(time,album){
 		}
 	}
 }
+
+//DUPLICATE, for .JPG, not .jpg files
+function showPhotos2(time,album){
+	if(time!=="" || album!==""){
+		if(loadedPhotoAlbum!==album){
+			loadPhotos2(time,album);
+			for(var i=0;i<fileNames[time][album].length;i++){
+				var name = "#img" + i;
+				$(name).delay(0).show();
+				$(name).delay(i*100).velocity({
+					top: '0px'
+				});
+			}
+			loadedPhotoTime = time;
+			loadedPhotoAlbum = album;
+		}else{
+			hidePhotos2(time,album);
+		}
+	}
+}
+
+
 function hidePhotos(time,album){
 	if(time!=="" || album!==""){
 		for(var i=0;i<fileNames[time][album].length;i++){
@@ -194,17 +229,41 @@ function hidePhotos(time,album){
 		loadedPhotoTime = "";
 	}
 }
+//DUPLICATE, for .JPG files
+function hidePhotos2(time,album){
+	if(time!=="" || album!==""){
+		for(var i=0;i<fileNames[time][album].length;i++){
+			var name = "#img" + i;
+			if(i%2==0){
+				$(name).delay(i*100).velocity({
+					right: '+=2000px'
+				});
+			}else{
+				$(name).delay(i*100).velocity({
+					left: '+=2000px'
+				})
+			}	
+		}
+		for(var i=0;i<fileNames[time][album].length;i++){
+			var name = "#img" + i;
+			$(name).delay(1000).slideUp();
+		}
+		loadedPhotoAlbum = "";
+		loadedPhotoTime = "";
+	}
+}
+
 
 $(document).ready(function(){ //Apparently this line is bad code hurr
 	//To do : fix the code so that it's more automated (have an array of the different events, or use the keys from fileNames)
 	//2017
 	$("#piclink-2017").click(function(){
 		$("#Regionals2017").slideToggle();
-		hidePhotos(loadedPhotoTime,loadedPhotoAlbum);
+		hidePhotos2(loadedPhotoTime,loadedPhotoAlbum);
 
 	});
 	$("#Regionals2017").click(function(){
-		showPhotos("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017");
 			
 	});
 	//2014
