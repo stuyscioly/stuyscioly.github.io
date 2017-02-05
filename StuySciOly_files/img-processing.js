@@ -95,7 +95,7 @@ var fileNames = {};
 		    	"IMG_4745",
 		    	"IMG_4746"
 	]
-
+	fileNames["2017"]["Regionals2017"] = Regionals2017;
 //2014
 
 	//Edmond's Greatest Hits
