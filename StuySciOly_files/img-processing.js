@@ -197,8 +197,16 @@ function hidePhotos(time,album){
 
 $(document).ready(function(){ //Apparently this line is bad code hurr
 	//To do : fix the code so that it's more automated (have an array of the different events, or use the keys from fileNames)
+	//2017
+	$("#piclink-2017").click(function(){
+		$("#Regionals2017").slideToggle();
+		hidePhotos(loadedPhotoTime,loadedPhotoAlbum);
 
-
+	});
+	$("#Regionals2017").click(function(){
+		showPhotos("2017","Regionals2017");
+			
+	});
 	//2014
 	$("#piclink-2014").click(function(){
 		$("#EdmondsGreatestHits2014").slideToggle();
