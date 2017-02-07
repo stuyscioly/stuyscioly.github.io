@@ -22,7 +22,10 @@ var fileNames = {};
 		    	"IMG_4661",
 		    	"IMG_4662",
 		    	"IMG_4663",
-		    	"IMG_4664",
+		    	"IMG_4664"
+		    ]
+	var Regionals2017_2 = 
+	    [
 		    	"IMG_4665",
 		    	"IMG_4666",
 		    	"IMG_4667",
@@ -32,7 +35,10 @@ var fileNames = {};
 		    	"IMG_4671",
 		    	"IMG_4672",
 		    	"IMG_4673",
-		    	"IMG_4674",
+		    	"IMG_4674"
+		    ]
+	var Regionals2017_3 = 
+	    [
 		    	"IMG_4675",
 		    	"IMG_4676",
 		    	"IMG_4677",
@@ -42,7 +48,10 @@ var fileNames = {};
 		    	"IMG_4681",
 		    	"IMG_4682",
 		    	"IMG_4683",
-		    	"IMG_4684",
+		    	"IMG_4684"
+		    ]
+	var Regionals2017_4 =
+	    [
 		    	"IMG_4685",
 		    	"IMG_4686",
 		    	"IMG_4687",
@@ -52,7 +61,10 @@ var fileNames = {};
 		    	"IMG_4691",
 		    	"IMG_4692",
 		    	"IMG_4693",
-		    	"IMG_4694",
+		    	"IMG_4694"
+		    ]
+	var Regionals2017_5 =
+	    [
 		    	"IMG_4695",
 		    	"IMG_4696",
 		    	"IMG_4697",
@@ -62,7 +74,10 @@ var fileNames = {};
 		    	"IMG_4701",
 		    	"IMG_4702",
 		    	"IMG_4703",
-		    	"IMG_4704",
+		    	"IMG_4704"
+		    ]
+	var Regionals2017_6 = 
+	    [
 		    	"IMG_4705",
 		    	"IMG_4706",
 		    	"IMG_4707",
@@ -72,7 +87,10 @@ var fileNames = {};
 		    	"IMG_4711",
 		    	"IMG_4714",
 		    	"IMG_4715",
-		    	"IMG_4716",
+		    	"IMG_4716"
+		    ]
+	var Regionals2017_7 =
+	    [
 		    	"IMG_4717",
 		    	"IMG_4718",
 		    	"IMG_4719",
@@ -82,7 +100,10 @@ var fileNames = {};
 		    	"IMG_4726",
 		    	"IMG_4728",
 		    	"IMG_4729",
-		    	"IMG_4730",
+		    	"IMG_4730"
+		    ]
+	var Regionals2017_8 = 
+	    [
 		    	"IMG_4732",
 		    	"IMG_4733",
 		    	"IMG_4734",
@@ -95,8 +116,15 @@ var fileNames = {};
 		    	"IMG_4744",
 		    	"IMG_4745",
 		    	"IMG_4746"
-	]
+		    ]
 	fileNames["2017"]["Regionals2017"] = Regionals2017;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_2;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_3;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_4;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_5;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_6;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_7;
+	fileNames["2017"]["Regionals2017_1"] = Regionals2017_8;
 //2014
 
 	//Edmond's Greatest Hits
@@ -259,10 +287,45 @@ $(document).ready(function(){ //Apparently this line is bad code hurr
 	//2017
 	$("#piclink-2017").click(function(){
 		$("#Regionals2017").slideToggle();
+		$("#Regionals2017_2").slideToggle();
+		$("#Regionals2017_3").slideToggle();
+		$("#Regionals2017_4").slideToggle();
+		$("#Regionals2017_5").slideToggle();
+		$("#Regionals2017_6").slideToggle();
+		$("#Regionals2017_7").slideToggle();
+		$("#Regionals2017_8").slideToggle();
 		hidePhotos2(loadedPhotoTime,loadedPhotoAlbum);
 
 	});
 	$("#Regionals2017").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_2").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_3").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_4").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_5").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_6").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_7").click(function(){
+		showPhotos2("2017","Regionals2017");
+			
+	});
+	$("#Regionals2017_8").click(function(){
 		showPhotos2("2017","Regionals2017");
 			
 	});
