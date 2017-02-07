@@ -118,13 +118,13 @@ var fileNames = {};
 		    	"IMG_4746"
 		    ]
 	fileNames["2017"]["Regionals2017"] = Regionals2017;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_2;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_3;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_4;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_5;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_6;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_7;
-	fileNames["2017"]["Regionals2017_1"] = Regionals2017_8;
+	fileNames["2017"]["Regionals2017_2"] = Regionals2017_2;
+	fileNames["2017"]["Regionals2017_3"] = Regionals2017_3;
+	fileNames["2017"]["Regionals2017_4"] = Regionals2017_4;
+	fileNames["2017"]["Regionals2017_5"] = Regionals2017_5;
+	fileNames["2017"]["Regionals2017_6"] = Regionals2017_6;
+	fileNames["2017"]["Regionals2017_7"] = Regionals2017_7;
+	fileNames["2017"]["Regionals2017_8"] = Regionals2017_8;
 //2014
 
 	//Edmond's Greatest Hits
@@ -302,31 +302,31 @@ $(document).ready(function(){ //Apparently this line is bad code hurr
 			
 	});
 	$("#Regionals2017_2").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_2");
 			
 	});
 	$("#Regionals2017_3").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_3");
 			
 	});
 	$("#Regionals2017_4").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_4");
 			
 	});
 	$("#Regionals2017_5").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_5");
 			
 	});
 	$("#Regionals2017_6").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_6");
 			
 	});
 	$("#Regionals2017_7").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_7");
 			
 	});
 	$("#Regionals2017_8").click(function(){
-		showPhotos2("2017","Regionals2017");
+		showPhotos2("2017","Regionals2017_8");
 			
 	});
 	//2014
