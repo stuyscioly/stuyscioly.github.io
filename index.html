@@ -1,434 +1,267 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Stuy Scioly </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<!-- <h1 id="logo"><a href="index.html">TWENTY <span>by HTML5 UP</span></a></h1> -->
+					<h1 id="logo"><a href="index.html"> Stuyvesant Science Olympiad </a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li class="submenu">
+								<a href="#">Menu</a>
+								<ul>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li class="submenu">
+										<a href="#">Divisions</a>
+										<ul>
+											<li><a href="biology.html">Biology</a></li>
+											<li><a href="chem.html">Chemistry</a></li>
+											<li><a href="earth.html">Earth Science</a></li>
+											<li><a href="physics.html">Physics</a></li>
+											<li><a href="tech.html">Technology</a></li>
+										</ul>
+									</li>
+									<li><a href="right-sidebar.html">Gallery</a></li>
+									<li><a href="no-sidebar.html">Sponsors</a></li>
+									<li><a href="contactus.html">Contact Us</a></li>
+
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+
+						<header>
+							<h2>Stuyvesant <br> Science Olympiad</h2>
+						</header>
+						<p> Forever Amongst the Stars <br> :) </br>
+						</p>
+						<footer>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">Who We Are</a></li>
+							</ul>
+						</footer>
 
-	<!-- Facebook sharing settings -->
-	<meta property="og:url" content="stuyscioly.github.io">
-	<meta property="og:image" content="http://stuyscioly.github.io/StuySciOly_files/rsz_1rsz_groupphoto.jpg">
-	<meta property="og:title" content="Stuyvesant Science Olympiad">
-	<meta property="og:description" content="The top Science Olympiad team in New York City">
-	<link rel="shortcut icon" href="StuySciOly_files/icon.jpg">
-	<!-- Basic Page Settings -->
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>SSO - Home</title>
-
-	<meta name="author" content="Stuyvesant Science Olympiad">
-	
-	<meta name="description" content="The top Science Olympiad team in New York City">
-
-	<!-- Main Style Settings -->
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link href="StuySciOly_files/css.css" rel="stylesheet">
-	<link href="StuySciOly_files/css(1).css" rel="stylesheet">
-
-	<link rel="stylesheet" href="http://static.tumblr.com/e6lc7yi/Wswn0wj9c/precrafted-social.css">
-	<link rel="stylesheet" href="http://static.tumblr.com/e6lc7yi/n1Kn2jkcq/top-dog-styles.css">
-
-	<!-- Custom Options -->
-
-	<!-- Custom Colors -->
-
-	<meta name="color:Background" content="#f0f4f5">
-	<meta name="color:Header Overlay" content="#000">
-	<meta name="color:Header Link" content="#eee">
-	<meta name="color:Header Link Hover" content="#ccc">
-	<meta name="color:Header Title" content="#fff">
-	<meta name="color:Header Subtitle" content="#eee">
-	<meta name="color:Header Description" content="#eee">
-	<meta name="color:Social Background" content="#fff">
-	<meta name="color:Social Icon" content="#2c3e50">
-	<meta name="color:Social Hover Background" content="#ccc">
-	<meta name="color:Social Hover Icon" content="#2c3e50">
-	<meta name="color:Menu Background" content="#fff">
-	<meta name="color:Menu Text" content="#2c3e50">
-	<meta name="color:Menu Hover Background" content="#eee">
-	<meta name="color:Menu Hover Text" content="#2c3e50">
-	<meta name="color:Post Background" content="#fff">
-	<meta name="color:Post Borders" content="#f0f4f5">
-	<meta name="color:Post Titles" content="#2c3e50">
-	<meta name="color:Text" content="#7f8c8d">
-	<meta name="color:Link" content="#2c3e50">
-	<meta name="color:Link Hover" content="#7f8c8d">
-
-	<!-- Custom Images -->
-	<meta name="image:Logo" content="">
-	<meta name="image:Avatar" content="">
-	<meta name="image:Header" content="">
-
-	<!-- Custom Text -->
-	<meta name="text:Header Overlay Opacity" content="0.5">
-
-
-	<!-- Custom Choices -->
-
-	<meta name="if:Header Overlay" content="1">
-
-	<meta name="if:Circle Avatar" content="1">
-	<meta name="if:Show Archive Link" content="1">
-
-	<meta name="if:White Icons" content="0">
-	<meta name="if:Show Group Author" content="0">
-	<meta name="if:Photos Link To Permalink" content="1">
-
-
-	<!-- Custom CSS -->
-	<style>
-		/* Basic Custom Settings */
-
-		body {
-			background: #f0f4f5;
-			color: #7f8c8d;
-		}
-
-		h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a {
-			color: #2c3e50;
-			/*#2c3e50*/
-		}
-
-		h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-			color: #7f8c8d;
-		}
-
-		a {
-			color: #2c3e50;
-		}
-		
-		a:hover {
-			color: #7f8c8d;
-		}
-
-		::-moz-selection { background: #2c3e50; color: #fff; text-shadow: none; }
-		::selection { background: #2c3e50; color: #fff; text-shadow: none; }
-
-
-		/* Header Custom Settings */
-
-		header .menu-toggle {
-			color: #eee;
-			display: none;
-		}
-		header .menu-toggle .menu-toggle-hamburger {
-			border-bottom-color: #eee;
-		}
-		header .menu-toggle .menu-toggle-hamburger:before,
-		header .menu-toggle .menu-toggle-hamburger:after {
-			background: #eee;
-		}
-
-		header .menu-toggle:hover, header .menu-toggle.on {
-			color: #ccc;
-		}
-		header .menu-toggle:hover .menu-toggle-hamburger, header .menu-toggle.on .menu-toggle-hamburger {
-			border-bottom-color: #ccc;
-		}
-		header .menu-toggle:hover .menu-toggle-hamburger:before,
-		header .menu-toggle:hover .menu-toggle-hamburger:after,
-		header .menu-toggle.on .menu-toggle-hamburger:before,
-		header .menu-toggle.on .menu-toggle-hamburger:after {
-			background: #ccc;
-		}
-
-		header .menu-switch {
-			color: #eee;
-		}
-		header .menu-switch:hover, header .menu-switch.on {
-			color: #ccc;
-		}
-		header .menu-switch.on span {
-			border-bottom-color: #ccc;
-		}
-
-
-		/* Menu Custom Settings */
-
-		nav {
-			background: #fff;
-		}
-		nav:after {
-			border-bottom-color: #fff;
-		}
-
-		nav ul li a {
-			color: #2c3e50;
-		}
-		nav ul li a:hover {
-			background: #eee;
-			color: #2c3e50;
-		}
-
-		nav input {
-			background: #fff;
-			color: #2c3e50;
-		}
-		nav input:focus {
-			background: #eee;
-			color: #2c3e50;
-		}
-
-		
-		/* Footer Custom Settings */
-
-		footer {
-			color: #7f8c8d;
-		}
-
-		footer .scroll-top, footer .credit {
-			color: #2c3e50;
-		}
-		footer .scroll-top:hover, footer .credit:hover {
-			color: #7f8c8d;
-		}
-
-		@media only screen and (min-width: 1024px) {
-			footer {
-				color: #eee;
-			}
-			footer .scroll-top, footer .credit {
-				color: #eee;
-			}
-			footer .scroll-top:hover, footer .credit:hover {
-				color: #ccc;
-			}
-		}
-
-
-		.post-nav a {
-			color: #eee;
-		}
-
-		.post-nav a:hover {
-			color: #ccc;
-		}
-
-
-		/* Profile Custom Settings */
-
-		.header-overlay {
-			opacity: 0.15;
-			background: #3e3d3d;
-		}
-
-		.the-profile .logo img {
-			max-width: px;
-		}
-		.the-profile .logo.avatar img {
-			max-width: 180px;
-		}
-
-		.the-profile .logo h1 {
-			color: #000000;
-		}
-		.the-profile .logo h1 a {
-			color: #000000;
-		}
-
-		.subtitle {
-			color: #210303;
-		}
-
-		.description {
-			color: #000000;
-		}
-
-		.social-menu li a {
-			background: #fff;
-			color: #2c3e50;
-		}
-		.social-menu li a:hover {
-			background: #ccc;
-			color: #2c3e50;
-		}
-
-		.follow-button {
-			color: #eee;
-			border-color: #eee;
-		}
-		.follow-button:hover {
-			color: #ccc;
-			border-color: #ccc;
-		}
-
-		.profile-content.tweets .the-tweets a {
-			color: #eee;
-		}
-		.profile-content.tweets .the-tweets a:hover {
-			color: #ccc;
-		}
-
-		.profile-content.audio .profile-audio-text {
-			color: #000000;
-		}
-
-
-		/* Posts Custom Settings */
-		/* fff is white */
-		article {
-			background: #fff;
-		}
-
-		article .icons li > a, article .icons li .like_button, article .icons li .reblog-icon {
-			border-color: #7f8c8d;
-		}
-
-		article.type_quote, article.type_answer .answer-person {
-			color: #2c3e50;
-		}
-
-		article.type_chat .line {
-			border-top-color: #f0f4f5;
-		}
-
-		article.type_link .the-link, article .read_more {
-			border-color: #2c3e50;
-			color: #2c3e50;
-		}
-		article.type_link .the-link:hover, article .read_more:hover {
-			border-color: #7f8c8d;
-			color: #7f8c8d;
-		}
-
-		blockquote, .post-divide {
-			border-color: #f0f4f5;
-		}		
-
-
-		
-
-   </style>
-
-   <style type="text/css">
-
-	  .the-posts { padding: 0px; }
-
-#masthead { padding: 19%; }
-#site-name { opacity: 0; }
-
-#masthead #pages a { font-size: 0em; }
-
-@media only screen and (min-width: 768px) {
-  article {
-    max-width: 100%; 
-  }
-  article p {
-      font-size: 20px;
-  }
-}
-
-article p {
-    text-align: left;
-}
-
-.the-profile .logo h1 {
-    margin-top: 0px;
-}
-
-.aboutlink, .presslink {
-    color: white;
-}
-
-   </style>
-
-<link rel="stylesheet" type="text/css" href="./StuySciOly_files/stylesheet.css">
-<meta http-equiv="x-dns-prefetch-control" content="off">
-<meta name="keywords" content="stuyvesant, science olympiad, stuy, scioly, scio, stuyvesant science olympiad">
-
-<body class="index" style="">
-
-<header>
-
-	<div class="menu-toggle">
-		<span class="menu-toggle-hamburger"></span>
-		
-	</div>
-
-	<div class="menu-switch on" data-switch="profile"><span><a class="presslink" href="http://stuyscioly.github.io/">HOME</a></span></div>
-	
-	<div class="menu-switch switch_blog"><span><a class="aboutlink">ABOUT</a></span></div>	
-
-	<div class="menu-switch switch_blog"><span><a class="aboutlink" href="announcements">ANNOUNCEMENTS</a></span></div>
-
-	<div class="menu-switch switch_blog"><span><a class="aboutlink" href="gallery">GALLERY</a></span></div>
-
-	<div class="menu-switch switch_blog"><span><a class="aboutlink" href="resources">RESOURCES</a></span></div>
-
-	<div class="menu-switch switch_blog"><span><a class="aboutlink" href="contact">CONTACT US</a></span></div>
-	
-	<div class="menu-switch switch_blog"><span><a class = "aboutlink" href="calendar">CALENDAR</a></span></div>
-
-	<div class="the-profile">
-
-		<div class="header-image" style="background-image:url(StuySciOly_files/Bridge.jpg)">
-			
-			<div class="header-overlay"></div>
-			
-		</div>
-		
-		<div class="centered-wrap" style="-webkit-transform: translate3d(0px, 0px, 0px); opacity: 1;">
-
-			<div class="centered-content">
-
-				<div class="profile-content profile show on">
-
-					<div class="logo avatar">
-						
-						
-						<h1><a style="color:#C73122; background: rgba(10%, 10%, 10%, 0.65); padding: 0px 10px">
-							Stuyvesant Science Olympiad
-							</a>
-						</h1>
 					</div>
-					
-					<div class="description"><a href="http://stuy.enschool.org" target="_blank" style="color:#FFFFFF">Stuyvesant High School's</a> <a style="color:#FFFFFF">Science Olympiad Team</a></div>
 
-					<ul class="social-menu">
-										
-						
-							<li><a href="https://www.facebook.com/groups/162104673842060/" target="_blank" title="Facebook"><i class="social-facebook"></i></a></li>
-				
-							<li><a href="mailto:stuyenceolympiad@gmail.com" target="_blank" title="Email"><i class="social-mail"></i></a></li>
-											
+				</section>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-cog"></span>
+						<h2> <strong> Who We Are </strong></h2>
+						<p><strong> Science Olympiad </strong> is a prestigious nationwide competition that consists of <strong> twenty-three </strong> events that span a great number of scientific disciplines and branches, and Stuyvesant High School leads the pack with its <strong> determination </strong> and <strong> unrelenting </strong> drive for success. Known primarily for its competitive standards and challenging curriculum, Stuyvesant is striving to add another notch onto its belt by expanding into the Science Olympiad scene and dominating. </p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style2 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-8 col-12-narrower">
+
+									<header>
+										<h2> Every year, Stuyvesant consistently places within the <strong> top five ranks </strong> of New York City regionals and within the <strong> top ten ranks </strong> of New York State competitions. </h2>
+									</header>
+									<p> ...And that is just the beginning. <br></br> Never stopping short of perfect, the highly selective Stuyvesant Science Olympiad team continues to reach for national recognition at the Nationals level of competition.</p>
+									<footer>
+										<!--<ul class="buttons">
+											<li><a href="#" class="button">Find Out More</a></li>
+										</ul>-->
+									</footer>
+
+								</div>
+								<div class="col-4 col-12-narrower imp-narrower">
+
+									<ul class="featured-icons">
+										<li><span class="icon fa-trophy"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon fa-trophy"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon fa-trophy"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon fa-trophy"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon fa-trophy"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon fa-trophy"><span class="label">Feature 6</span></span></li>
+									</ul>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-smile-o"></span>
+										<header>
+											<h3>1st at NYC Regionals</h3>
+										</header>
+										<p>:)</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-smile-o"></span>
+										<header>
+											<h3>8th at Princeton Invitationals</h3>
+										</header>
+										<p>:)</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-smile-o"></span>
+										<header>
+											<h3>6th at NY States</h3>
+										</header>
+										<p>:)</p>
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Three -->
+						<!-- <section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Next look at this <strong>cool stuff</strong></h2>
+							</header>
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<header>
+											<h3>A Really Fast Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>An Airport Terminal</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Hyperspace Travel</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>And Another Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>
+							</footer>
+
+						</section>
+
+				</article> -->
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<header>
+						<h2>Ready to do <strong>something</strong>?</h2>
+						<p><($_$)></p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="#" class="button primary">Take My Money</a></li>
+							<li><a href="#" class="button">LOL Wut</a></li>
+						</ul>
+					</footer>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
 					</ul>
 
-				</div>
+					<ul class="copyright">
+						<li>&copy; Stuyvesant Science Olympiad </li><li> 2018 </a></li>
+					</ul>
 
-			</div>
+				</footer>
 
 		</div>
-		
-	</div>
 
-</header>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-
-
-<section class="the-posts" style="padding: 0px">
-
-	<div class="posts-holder">
-   
-		<article id="89599440550" class="about">
-
-			<div class="article-content">
-
-			<a title="Stuyvesant Science Olympiad"><img src="./StuySciOly_files/rsz_1rsz_groupphoto.jpg"></a>
-
-			<div class="inner-wrap">
-				<div class="caption">
-					<p><span><a href="https:soinc.org" target="_blank">Science Olympiad</a> is a prestigious nationwide competition that consists of twenty-odd events that span a great number of scientific disciplines and branches, and Stuyvesant High School leads the pack with its determination and unrelenting drive for success. Known primarily for its competitive standards and challenging curriculum, Stuyvesant is striving to add another notch onto its belt by expanding into the Science Olympiad scene and dominating. Every year, Stuyvesant consistently places within the top five ranks of New York City regionals and within the top ten ranks of New York state competitions, and that is just the beginning. Never stopping short of perfect, the highly selective Stuyvesant Science Olympiad team continues to reach for national recognition at the Nationals level of competition.</span></p>
-<p><span></span></p>
-
-				</div>
-			</div>		
-			<div class="post-divide"></div> 	 	 	   
-		</article>
-
-</section>
-
-<!-- Javascript Assets -->
-
-<script src="./StuySciOly_files/jquery.min.js"></script>
-<<script src="./StuySciOly_files/top-dog-plugins.js"></script>
-<script src="./StuySciOly_files/top-dog-app.js"></script>
+	</body>
+</html>
