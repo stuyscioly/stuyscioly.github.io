@@ -12,7 +12,7 @@ iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+u, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
@@ -24,6 +24,19 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+
+	i {
+	    border: solid black;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    padding: 2px;
+	}
+
+	.down {
+	    transform: rotate(45deg);
+	    -webkit-transform: rotate(45deg);
+	}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -175,6 +188,45 @@ input, select, textarea {
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
+
+/* Accordion */
+.accordion {
+    background-color: #ECF0F1;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.7s;
+}
+
+.accordion1{
+	background-color:#ffffff;
+	color: #000;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 13px;
+	transition: 0.7s;
+}
+
+.active, .accordion:hover {
+    /*background-color: #D0D3D4;*/
+		border-bottom-color: transparent;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #D0D3D4;
+    overflow: hidden;
+}
 
 /* Container */
 
@@ -1852,7 +1904,7 @@ input, select, textarea {
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
+			/*background: url("images/overlay.png");*/
 			content: '';
 			height: 100%;
 			left: 0;
@@ -1878,6 +1930,22 @@ input, select, textarea {
 			.image.featured img {
 				display: block;
 				width: 100%;
+			}
+
+			.image.sponsored img{
+				display: block;
+				float: left;
+    		width: 25%;
+    		padding: 20px;
+			}
+
+			.image.sponsored img:hover{
+				border-bottom-color: transparent;
+				transform: scale(1.2);
+				-moz-transition: all 0.2s ease-in-out;
+				-webkit-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
 			}
 
 /* Icon */

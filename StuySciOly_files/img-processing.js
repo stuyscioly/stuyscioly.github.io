@@ -1,351 +1,71 @@
-var mainDirPath = "./StuySciOly_files/Gallery/";
-var fileType = ".jpg";
-var fileType2 = ".JPG";
-var gallery= document.getElementById("gallery-photos");
-var loadedPhotoTime = "";
-var loadedPhotoAlbum= "";
 
-var fileNames = {};
-	fileNames["2014"] = {};
-	fileNames["2013"] = {};
-	fileNames["2017"] = {};
-//2017
-	//Regionals
-	var Regionals2017 = 
-	    [
-			"IMG_4655",
-		    	"IMG_4656",
-		    	"IMG_4657",
-		    	"IMG_4658",
-		    	"IMG_4659",
-		    	"IMG_4660",
-		    	"IMG_4661",
-		    	"IMG_4662",
-		    	"IMG_4663",
-		    	"IMG_4664"
-		    ]
-	var Regionals2017_2 = 
-	    [
-		    	"IMG_4665",
-		    	"IMG_4666",
-		    	"IMG_4667",
-		    	"IMG_4668",
-		    	"IMG_4669",
-		    	"IMG_4670",
-		    	"IMG_4671",
-		    	"IMG_4672",
-		    	"IMG_4673",
-		    	"IMG_4674"
-		    ]
-	var Regionals2017_3 = 
-	    [
-		    	"IMG_4675",
-		    	"IMG_4676",
-		    	"IMG_4677",
-		    	"IMG_4678",
-		    	"IMG_4679",
-		    	"IMG_4680",
-		    	"IMG_4681",
-		    	"IMG_4682",
-		    	"IMG_4683",
-		    	"IMG_4684"
-		    ]
-	var Regionals2017_4 =
-	    [
-		    	"IMG_4685",
-		    	"IMG_4686",
-		    	"IMG_4687",
-		    	"IMG_4688",
-		    	"IMG_4689",
-		    	"IMG_4690",
-		    	"IMG_4691",
-		    	"IMG_4692",
-		    	"IMG_4693",
-		    	"IMG_4694"
-		    ]
-	var Regionals2017_5 =
-	    [
-		    	"IMG_4695",
-		    	"IMG_4696",
-		    	"IMG_4697",
-		    	"IMG_4698",
-		    	"IMG_4699",
-		    	"IMG_4700",
-		    	"IMG_4701",
-		    	"IMG_4702",
-		    	"IMG_4703",
-		    	"IMG_4704"
-		    ]
-	var Regionals2017_6 = 
-	    [
-		    	"IMG_4705",
-		    	"IMG_4706",
-		    	"IMG_4707",
-		    	"IMG_4708",
-		    	"IMG_4709",
-		    	"IMG_4710",
-		    	"IMG_4711",
-		    	"IMG_4714",
-		    	"IMG_4715",
-		    	"IMG_4716"
-		    ]
-	var Regionals2017_7 =
-	    [
-		    	"IMG_4717",
-		    	"IMG_4718",
-		    	"IMG_4719",
-		    	"IMG_4720",
-		    	"IMG_4722",
-		    	"IMG_4723",
-		    	"IMG_4726",
-		    	"IMG_4728",
-		    	"IMG_4729",
-		    	"IMG_4730"
-		    ]
-	var Regionals2017_8 = 
-	    [
-		    	"IMG_4732",
-		    	"IMG_4733",
-		    	"IMG_4734",
-		    	"IMG_4738",
-		    	"IMG_4739",
-		    	"IMG_4740",
-		    	"IMG_4741",
-		    	"IMG_4742",
-		    	"IMG_4743",
-		    	"IMG_4744",
-		    	"IMG_4745",
-		    	"IMG_4746"
-		    ]
-	fileNames["2017"]["Regionals2017"] = Regionals2017;
-	fileNames["2017"]["Regionals2017_2"] = Regionals2017_2;
-	fileNames["2017"]["Regionals2017_3"] = Regionals2017_3;
-	fileNames["2017"]["Regionals2017_4"] = Regionals2017_4;
-	fileNames["2017"]["Regionals2017_5"] = Regionals2017_5;
-	fileNames["2017"]["Regionals2017_6"] = Regionals2017_6;
-	fileNames["2017"]["Regionals2017_7"] = Regionals2017_7;
-	fileNames["2017"]["Regionals2017_8"] = Regionals2017_8;
-//2014
-
-	//Edmond's Greatest Hits
-
-	var EdmondsGreatestHits2014 = 
-		[
-			"angela",
-			"beard",
-			"brandon",
-			"cindy",
-			"danny",
-			"diana",
-			"dino",
-			"dyingwaterbottle",
-			"hallistired",
-			"hurr",
-			"hurrpart2",
-			"jason",
-			"johnson",
-			"kellychen"
-		];
-	fileNames["2014"]["EdmondsGreatestHits2014"] = EdmondsGreatestHits2014;
-
-//2013
-	//States 2013
-	var States2013 = 
-		[
-			"Bus",
-			"DanfuKelly",
-			"Johnson",
-			"KoolKatKelly",
-			"ModelChuk",
-			"Saim"
-		];
-	fileNames["2013"]["States2013"] = States2013;
+//Regionals 2017
+var Reg2017 = new Array ();
+Reg2017[0] = "./StuySciOly_files/Gallery/Resized2017/IMG_4655.jpg";
+Reg2017[1] = "./StuySciOly_files/Gallery/Resized2017/IMG_4657.jpg";
+Reg2017[2] = "./StuySciOly_files/Gallery/Resized2017/IMG_4670.jpg";
+Reg2017[3] = "./StuySciOly_files/Gallery/Resized2017/IMG_4671.jpg";
+Reg2017[4] = "./StuySciOly_files/Gallery/Resized2017/IMG_4672.jpg";
+Reg2017[5] = "./StuySciOly_files/Gallery/Resized2017/IMG_4676.jpg";
+Reg2017[6] = "./StuySciOly_files/Gallery/Resized2017/IMG_4678.jpg";
+Reg2017[7] = "./StuySciOly_files/Gallery/Resized2017/IMG_4681.jpg";
+Reg2017[8] = "./StuySciOly_files/Gallery/Resized2017/IMG_4684.jpg";
+Reg2017[9] = "./StuySciOly_files/Gallery/Resized2017/IMG_4686.jpg";
+Reg2017[10] = "./StuySciOly_files/Gallery/Resized2017/IMG_4689.jpg";
+Reg2017[11] = "./StuySciOly_files/Gallery/Resized2017/IMG_4691.jpg";
+Reg2017[12] = "./StuySciOly_files/Gallery/Resized2017/IMG_4694.jpg";
+Reg2017[13] = "./StuySciOly_files/Gallery/Resized2017/IMG_4699.jpg";
+Reg2017[14] = "./StuySciOly_files/Gallery/Resized2017/IMG_4716.jpg";
+Reg2017[15] = "./StuySciOly_files/Gallery/Resized2017/IMG_4720.jpg";
+Reg2017[16] = "./StuySciOly_files/Gallery/Resized2017/IMG_4728.jpg";
+Reg2017[17] = "./StuySciOly_files/Gallery/Resized2017/IMG_4729.jpg";
+Reg2017[18] = "./StuySciOly_files/Gallery/Resized2017/IMG_4738.jpg";
+Reg2017[19] = "./StuySciOly_files/Gallery/Resized2017/IMG_4740.jpg";
+Reg2017[20] = "./StuySciOly_files/Gallery/Resized2017/IMG_4741.jpg";
+Reg2017[21] = "./StuySciOly_files/Gallery/Resized2017/IMG_4746.jpg";
 
 
-function loadPhotos(time,album){
-	var id = "img";
-	var inner = "";
-	for(var i=0;i<fileNames[time][album].length;i++){
-		inner += insertPhoto(mainDirPath+time+"/"+album+"/"+fileNames[time][album][i]+fileType,i);
-		document.getElementById("gallery-photos").innerHTML=inner;
-		
-	}
+function displayAllImagesReg2017() {
+ for (var i=0;i<Reg2017.length;i++) {
+    document.write("<img src='" + Reg2017[i] + "'width=32%'height=33%'/>&nbsp");
 }
-//DUPLICATE, for .JPG and not .jpg files
-function loadPhotos2(time,album){
-	var id = "img";
-	var inner = "";
-	for(var i=0;i<fileNames[time][album].length;i++){
-		inner += insertPhoto(mainDirPath+time+"/"+album+"/"+fileNames[time][album][i]+fileType2,i);
-		document.getElementById("gallery-photos").innerHTML=inner;
-		
-	}
 }
 
+var Ed2014 = new Array ();
+Ed2014[0] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/angela.jpg";
+Ed2014[1] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/beard.jpg";
+Ed2014[2] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/brandon.jpg";
+Ed2014[3] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/cindy.jpg";
+Ed2014[4] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/danny.jpg";
+Ed2014[5] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/diana.jpg";
+Ed2014[6] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/dino.jpg";
+Ed2014[7] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/dyingwaterbottle.jpg";
+Ed2014[8] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/hallistired.jpg";
+Ed2014[9] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/hurr.jpg";
+Ed2014[10] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/hurrpart2.jpg";
+Ed2014[11] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/jason.jpg";
+Ed2014[12] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/johnson.jpg";
+Ed2014[13] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/kellychen.jpg";
+Ed2014[14] = "./StuySciOly_files/Gallery/2014/EdmondsGreatestHits2014/max.jpg";
 
-function insertPhoto(path,num){
-
-		var stringstuff = "";
-		stringstuff+= "<div ";
-		stringstuff+= "id=\"img" + num + "\"";
-		stringstuff+= "style=\"float:left;position:relative;top:500px;display:none\">";
-		stringstuff+= "<img src=\"" + path + "\" width=\"325\" style=\"position:relative\"> ";
-		stringstuff+= "</div>";
-		return stringstuff;
-	}
-
-
-function showPhotos(time,album){
-	if(time!=="" || album!==""){
-		if(loadedPhotoAlbum!==album){
-			loadPhotos(time,album);
-			for(var i=0;i<fileNames[time][album].length;i++){
-				var name = "#img" + i;
-				$(name).delay(0).show();
-				$(name).delay(i*100).velocity({
-					top: '0px'
-				});
-			}
-			loadedPhotoTime = time;
-			loadedPhotoAlbum = album;
-		}else{
-			hidePhotos(time,album);
-		}
-	}
+function displayAllImages2014() {
+  for(var i=0; i<Ed2014.length;i++){
+    document.write("<img src='" + Ed2014[i] + "'width=32%' height=33%'/>&nbsp");
+  }
 }
 
-//DUPLICATE, for .JPG, not .jpg files
-function showPhotos2(time,album){
-	if(time!=="" || album!==""){
-		if(loadedPhotoAlbum!==album){
-			loadPhotos2(time,album);
-			for(var i=0;i<fileNames[time][album].length;i++){
-				var name = "#img" + i;
-				$(name).delay(0).show();
-				$(name).delay(i*100).velocity({
-					top: '0px'
-				});
-			}
-			loadedPhotoTime = time;
-			loadedPhotoAlbum = album;
-		}else{
-			hidePhotos2(time,album);
-		}
+var States2013 = new Array();
+States2013[0] = "./StuySciOly_files/Gallery/2013/States2013/Bus.jpg";
+States2013[1] = "./StuySciOly_files/Gallery/2013/States2013/DanfuKelly.jpg";
+States2013[2]="./StuySciOly_files/Gallery/2013/States2013/KoolKatKelly.jpg";
+States2013[3]="./StuySciOly_files/Gallery/2013/States2013/TheArm.jpg";
+States2013[4] ="./StuySciOly_files/Gallery/2013/States2013/Johnson.jpg";
+States2013[5]="./StuySciOly_files/Gallery/2013/States2013/ModelChuk.jpg";
+States2013[6]="./StuySciOly_files/Gallery/2013/States2013/Saim.jpg";
+
+
+function displayAllImages2013() {
+ for (var i=0;i<States2013.length;i++){
+    document.write("<img src='" + States2013[i] + "'width=49%'height=50%'/>&nbsp");
 	}
 }
-
-
-function hidePhotos(time,album){
-	if(time!=="" || album!==""){
-		for(var i=0;i<fileNames[time][album].length;i++){
-			var name = "#img" + i;
-			if(i%2==0){
-				$(name).delay(i*100).velocity({
-					right: '+=2000px'
-				});
-			}else{
-				$(name).delay(i*100).velocity({
-					left: '+=2000px'
-				})
-			}	
-		}
-		for(var i=0;i<fileNames[time][album].length;i++){
-			var name = "#img" + i;
-			$(name).delay(1000).slideUp();
-		}
-		loadedPhotoAlbum = "";
-		loadedPhotoTime = "";
-	}
-}
-//DUPLICATE, for .JPG files
-function hidePhotos2(time,album){
-	if(time!=="" || album!==""){
-		for(var i=0;i<fileNames[time][album].length;i++){
-			var name = "#img" + i;
-			if(i%2==0){
-				$(name).delay(i*100).velocity({
-					right: '+=2000px'
-				});
-			}else{
-				$(name).delay(i*100).velocity({
-					left: '+=2000px'
-				})
-			}	
-		}
-		for(var i=0;i<fileNames[time][album].length;i++){
-			var name = "#img" + i;
-			$(name).delay(1000).slideUp();
-		}
-		loadedPhotoAlbum = "";
-		loadedPhotoTime = "";
-	}
-}
-
-
-$(document).ready(function(){ //Apparently this line is bad code hurr
-	//To do : fix the code so that it's more automated (have an array of the different events, or use the keys from fileNames)
-	//2017
-	$("#piclink-2017").click(function(){
-		$("#Regionals2017").slideToggle();
-		$("#Regionals2017_2").slideToggle();
-		$("#Regionals2017_3").slideToggle();
-		$("#Regionals2017_4").slideToggle();
-		$("#Regionals2017_5").slideToggle();
-		$("#Regionals2017_6").slideToggle();
-		$("#Regionals2017_7").slideToggle();
-		$("#Regionals2017_8").slideToggle();
-		hidePhotos2(loadedPhotoTime,loadedPhotoAlbum);
-
-	});
-	$("#Regionals2017").click(function(){
-		showPhotos2("2017","Regionals2017");
-			
-	});
-	$("#Regionals2017_2").click(function(){
-		showPhotos2("2017","Regionals2017_2");
-			
-	});
-	$("#Regionals2017_3").click(function(){
-		showPhotos2("2017","Regionals2017_3");
-			
-	});
-	$("#Regionals2017_4").click(function(){
-		showPhotos2("2017","Regionals2017_4");
-			
-	});
-	$("#Regionals2017_5").click(function(){
-		showPhotos2("2017","Regionals2017_5");
-			
-	});
-	$("#Regionals2017_6").click(function(){
-		showPhotos2("2017","Regionals2017_6");
-			
-	});
-	$("#Regionals2017_7").click(function(){
-		showPhotos2("2017","Regionals2017_7");
-			
-	});
-	$("#Regionals2017_8").click(function(){
-		showPhotos2("2017","Regionals2017_8");
-			
-	});
-	//2014
-	$("#piclink-2014").click(function(){
-		$("#EdmondsGreatestHits2014").slideToggle();
-		hidePhotos(loadedPhotoTime,loadedPhotoAlbum);
-
-	});
-	$("#EdmondsGreatestHits2014").click(function(){
-		showPhotos("2014","EdmondsGreatestHits2014");
-			
-	});
-
-	//2013
-	$("#piclink-2013").click(function(){
-		$("#States2013").slideToggle();
-		hidePhotos(loadedPhotoTime,loadedPhotoAlbum);
-	});
-	$("#States2013").click(function(){
-		showPhotos("2013","States2013");
-	});
-});
